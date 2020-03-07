@@ -1,0 +1,30 @@
+<p>
+  login 
+</p>
+<form>
+<ion-list>
+<ion-item>
+  <ion-input input placeholder="username" [(ngModel)]="username" name="username"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-input input placeholder="lastname" [(ngModel)]="lastname"lastname="lastname"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-input input placeholder="e-mail" [(ngModel)]="email"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-input input placeholder="password" [(ngModel)]="password" type="password"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-input input placeholder="confirmpass" [(ngModel)]="confirmpass" type="password"></ion-input>
+</ion-item>
+</ion-list>
+
+<button 
+  ion-button
+  *ngIf="username!=null"
+  full (click) = "register()">
+   Register
+</button>
+<button ion-button type="reset"> Borrar </button>
+</form>
